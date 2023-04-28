@@ -1,0 +1,22 @@
+.why-choose{
+    background-color: var(--section-bg);
+    width: 100%;
+    height: fit-content;
+    .one-box{
+        background-color: var(--red-color);
+        color: white;
+        button{
+            background-color: #cf4848 !important;
+            display: block;
+            letter-spacing: 2px;
+        }
+    }
+    .three-box{
+        .box{
+            background-color: white;
+            p{
+                color: rgb(135 135 135);
+            }
+        }
+    }
+}

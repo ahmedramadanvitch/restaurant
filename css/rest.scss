@@ -1,0 +1,37 @@
+// helper folder
+@import "sass/helper/mixins";
+@import "sass/helper/variables";
+// layout
+@import "sass/layout/header";
+@import "sass/layout/footer";
+// components folder
+@import "sass/component/btn-up";
+@import "sass/component/main-btn";
+@import "sass/component/main-heading-h2";
+// pages folder
+@import "sass/pages/landing";
+@import "sass/pages/about";
+@import "sass/pages/why-choose";
+@import "sass/pages/counter";
+@import "sass/pages/menu";
+@import "sass/pages/testimonials";
+@import "sass/pages/events";
+@import "sass/pages/chefs";
+@import "sass/pages/gallery";
+@import "sass/pages/contact";
+
+body{
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none !important;
+}
+  
+ul {
+    @include reset-ul;
+}
+a {
+    @include reset-a-link;
+}
+  

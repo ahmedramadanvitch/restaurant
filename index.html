@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/rest.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrab CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- icon CDN bootstrab -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <!-- aos.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <!-- start pre-loader -->
+    <div id="pre-loader" style="background-image: url(imgs/pre-loading-2.gif);"></div>
+    <!-- end pre-loader -->
+    
+    <!-- Start header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-up" data-aos-duration="1500">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#landing">Vitch</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 position-relative">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#landing">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#chefs">Chefs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button class="main-btn btn">Book a Table</button>
+        </div>
+    </nav>
+    <!-- End header -->
+
+    <!-- start landing -->
+    <section class="landing pb-4" id="landing">
+        <div class="container">
+            <div class="row d-flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
+                <div class="text-landing col-12 col-lg-6" data-aos="fade-down" data-aos-duration="1500">
+                    <h1 class="mb-3 mb-lg-5 text-center text-lg-start">Enjoy Your Healthy <br> Delicious dinner</h1>
+                    <p class="mb-3 mb-lg-5 lead fw-normal text-center text-lg-start">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+                    <button class="btn main-btn px-5 py-2 mx-auto mx-lg-0 mb-3">Book a Table</button>
+                </div>
+                <div class="img-landing col-8 mx-auto mx-lg-0 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="imgs/hero-img.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End landing -->
+
+    <!-- start btn scroll to top -->
+    <a class="btn-up">
+      <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/qsacmnwj.json"
+          trigger="loop"
+          delay="1000"
+          style="width:50px;height:50px">
+      </lord-icon>
+    </a>
+    <!-- End btn scroll to top -->
+
+    <!-- start about -->
+    <section class="about py-5" id="about">
+      <div class="container">
+
+        <div class="main-heading" data-aos="fade-up" data-aos-duration="1500">
+          <p class="">ABOUT US</p>
+          <h2>Learn More <span>About Us</span> </h2>
+        </div>
+
+        <div class="row d-flex flex-column flex-lg-row justify-content-lg-between" data-aos="fade-down" data-aos-duration="1500">
+          <div class="img-about col-lg-7 position-relative">
+            <img src="imgs/about.jpg" class="img-fluid" alt="">
+            <div class="box-img-about position-absolute p-3 fw-bold">
+              <p class="fs-4">Book a Table</p>
+              <p class="fs-3">+1 5589 55488 55</p>
+            </div>
+          </div>
+          <div class="text-about col-lg-5">
+            <ul>
+              <li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/ivayzoru.json"
+                    trigger="loop"
+                    delay="1000"
+                    style="width:30px;height:30px; margin-top: -2px;">
+                </lord-icon>
+                <p class="fw-bold">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/ivayzoru.json"
+                    trigger="loop"
+                    delay="1000"
+                    style="width:30px;height:30px; margin-top: -2px;">
+                </lord-icon>
+                <p class="fw-bold">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+              </li>
+              <li class="d-flex align-items-start gap-2">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/ivayzoru.json"
+                    trigger="loop"
+                    delay="1000"
+                    style="width:30px;height:30px; margin-top: -2px;">
+                </lord-icon>
+                <p class="fw-bold">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+              </li>
+              <li>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+              </li>
+              <li>
+                <img src="imgs/about-2.jpg" class="img-fluid" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End about -->
+
+    <!-- start why-choose -->
+    <section class="why-choose py-5">
+      <div class="container">
+        <div class="row d-flex flex-column flex-xl-row justify-content-lg-around align-items-center">
+          
+          <div class="one-box col-11 col-xl-4 rounded-3 p-3 mb-4 mb-xl-0 text-center text-xl-start" data-aos="fade-down" data-aos-duration="1500">
+            <h2>Why Choose ...<br> Yummy?</h2>
+            <p class="lead mt-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+            <button class="main-btn btn mx-auto">Learn More</button>
+          </div>
+          
+          <div class="three-box col-12 col-xl-7" data-aos="fade-up" data-aos-duration="1500">
+            <div class="d-flex flex-column flex-xl-row gap-3">
+
+              <div class="box py-4 px-3 d-flex flex-column justify-content-center align-items-center text-center">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/gowvgfsi.json"
+                    trigger="loop"
+                    delay="1000"
+                    style="width:75px;height:75px">
+                </lord-icon>
+                <h4 class="my-4">Corporis voluptates officia eiusmod</h4>
+                <p>
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                </p>
+              </div>
+              
+              <div class="box py-4 px-3 d-flex flex-column justify-content-center align-items-center text-center">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/pimvysaa.json"
+                    trigger="loop"
+                    delay="1000"
+                    style="width:75px;height:75px">
+                </lord-icon>
+                <h4 class="my-4">Corporis voluptates officia eiusmod</h4>
+                <p>
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                </p>
+              </div>
+              
+              <div class="box py-4 px-3 d-flex flex-column justify-content-center align-items-center text-center">
+                <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/ddqkigxl.json"
+                    trigger="loop"
+                    delay="1000"
+                    style="width:75px;height:75px">
+                </lord-icon>
+                <h4 class="my-4">Corporis voluptates officia eiusmod</h4>
+                <p>
+                  Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip
+                </p>
+              </div>
+
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+    <!-- End why-choose -->
+
+    <!-- start section counter -->
+    <section class="counter position-relative" id="counter" style="background-image: url(imgs/stats-bg.jpg);" data-aos="fade-down" data-aos-duration="1500">
+      <div class="container position-relative">
+        <div class="position-absolute text-center text-white d-flex flex-column flex-md-row justify-content-center align-items-center">
+          
+          <div class="circle-div">
+            <span data-goal="400" class="number-span-js circle-1 m-auto d-flex justify-content-center align-items-center fs-4 rounded-circle text-center"> 
+            
+            </span>
+            <p class="fs-5 fw-bold"> Clients </p>
+          </div>
+          
+          <div class="circle-div">
+            <span data-goal="150" class="number-span-js circle-2 m-auto d-flex justify-content-center align-items-center fs-4 rounded-circle text-center">
+
+            </span>
+            <p class="fs-5 fw-bold"> Projects </p>
+          </div>
+          
+          <div class="circle-div">
+            <span data-goal="250" class="number-span-js circle-3 m-auto d-flex justify-content-center align-items-center fs-4 rounded-circle text-center">
+
+            </span>
+            <p class="fs-5 fw-bold"> Hours Of Support</p>
+          </div>
+          
+          <div class="circle-div">
+            <span data-goal="300" class="number-span-js circle-4 m-auto d-flex justify-content-center align-items-center fs-4 rounded-circle text-center">
+            
+            </span>
+            <p class="fs-5 fw-bold"> Workers </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end section counter -->
+
+    <!-- start menu -->
+    <section class="menu p-2 mt-2 text-center position-relative" id="menu">
+      <div class="container">
+
+        <div class="main-heading" data-aos="fade-down" data-aos-duration="1500">
+          <p class="">OUR MENU</p>
+          <h2>Check Our <span>Yummy Menu</span> </h2>
+        </div>
+
+        <ul class="swicher-ul d-flex justify-content-center align-items-center pt-3" data-aos="fade-up" data-aos-duration="1500">
+          <li class="fs-4 active" data-work=".all">All</li>
+          <li class="fs-4" data-work=".starters">Starters</li>
+          <li class="fs-4" data-work=".breakfast">Breakfast</li>
+          <li class="fs-4" data-work=".lunch">Lunch</li>
+          <li class="fs-4" data-work=".dinner">Dinner</li>
+        </ul>
+
+        <div class="row mt-5 justify-content-center align-items-center gap-3 gap-sm-5" data-aos="fade-down" data-aos-duration="1500">
+
+          <div class="box all breakfast position-relative mb-3" style="width: 23rem;">
+              
+            <img src="imgs/menu-item-1.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> Magnam Tiste </p>
+              <span class="fw-bolder fs-4 text-center"> $30.00 </span>
+          </div>
+      
+          <div class="box all starters position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/menu-item-2.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> Aut Luia </p>
+              <span class="fw-bolder fs-4 text-center"> $20.00 </span>
+          </div>
+
+          <div class="box all starters position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/menu-item-3.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> Est Eligendi </p>
+              <span class="fw-bolder fs-4 text-center"> $10.00 </span>
+          </div>
+
+          <div class="box all lunch position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/menu-item-4.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> Eos Luibusdam </p>
+              <span class="fw-bolder fs-4 text-center"> $50.00 </span>
+          </div>
+
+          <div class="box all lunch position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/menu-item-5.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> Eos Luibusdam </p>
+              <span class="fw-bolder fs-4 text-center"> $70.00 </span>
+          </div>
+
+          <div class="box all dinner position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/menu-item-6.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> Laboriosam Direva </p>
+              <span class="fw-bolder fs-4 text-center"> $30.00 </span>
+          </div>
+
+          <div class="box all dinner position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/hero-img.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> High quality </p>
+              <span class="fw-bolder fs-4 text-center"> $30.00 </span>
+          </div>
+
+          <div class="box all dinner position-relative mb-3" style="width: 23rem;">
+              <img src="imgs/menu-item-2.png" alt="">
+
+              <p class="fs-4 text-black-50 mb-0 text-center"> High quality </p>
+              <span class="fw-bolder fs-4 text-center"> $30.00 </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End menu -->
+
+    <!-- start testimonials -->
+    <section class="testimonials mt-5 py-3">
+      <div class="container">
+
+        <div class="main-heading" data-aos="fade-down" data-aos-duration="1500">
+          <p class="">TESTIMONIALS</p>
+          <h2>What Are They <span>Saying About Us</span> </h2>
+        </div>
+      
+        <swiper-container class="mySwiper" space-between="30" pagination="true" pagination-clickable="true" data-aos="fade-down" data-aos-duration="1500">
+          <swiper-slide>
+            <div class="d-flex gap-3 gap-sm-5 flex-column flex-lg-row">
+              <div class="text">
+                <p class="lead">Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+                <h4 class="mb-1">Ahmed ramadan</h4>
+                <span class="mb-3 d-block ">front-end-developer</span>
+
+                <div class="star-rating d-flex gap-2">
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                </div>    
+
+
+              </div>
+
+              <div class="img">
+                <img src="imgs/testimonials-4.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>            
+            <div class="d-flex gap-3 gap-sm-5 flex-column flex-lg-row">
+              <div class="text">
+                <p class="lead">Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+                <h4 class="mb-1">Ahmed mns</h4>
+                <span class="mb-3 d-block ">front-end-developer</span>
+
+                <div class="star-rating d-flex gap-2">
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                </div>    
+
+
+              </div>
+
+              <div class="img">
+                <img src="imgs/testimonials-2.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </swiper-slide>
+          
+          <swiper-slide>
+            <div class="d-flex gap-3 gap-sm-5 flex-column flex-lg-row">
+              <div class="text">
+                <p class="lead">Ahmed quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+                <h4 class="mb-1">Ahmed ramadan</h4>
+                <span class="mb-3 d-block ">back-end</span>
+
+                <div class="star-rating d-flex gap-2">
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                </div>    
+
+
+              </div>
+
+              <div class="img">
+                <img src="imgs/testimonials-3.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </swiper-slide>
+          
+          <swiper-slide>
+            <div class="d-flex gap-3 gap-sm-5 flex-column flex-lg-row">
+              <div class="text">
+                <p class="lead">vitch nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</p>
+                <h4 class="mb-1">Ahmed mnsour</h4>
+                <span class="job-name mb-3 d-block ">front-end</span>
+
+                <div class="star-rating mb-3 d-flex gap-2">
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                  <i class="fa-solid fa-star fs-5"></i>
+                </div>    
+
+
+              </div>
+
+              <div class="img">
+                <img src="imgs/testimonials-1.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </swiper-slide>
+        
+        </swiper-container>
+      
+      </div>
+    </section>
+    <!-- End testimonials -->
+
+    <!-- start events -->
+    <section class="events my-5" id="events">
+
+      <div class="main-heading" data-aos="fade-down" data-aos-duration="1500">
+        <p>EVENTS</p>
+        <h2>Share <span>Your Moments </span> In Our Restaurant</h2>
+      </div>
+      <!-- this swiper display in meduim screen and large screen -->
+      <swiper-container class="mySwiper swiper-largescreen" pagination="true" pagination-clickable="true" space-between="5" slides-per-view="3" autoplay-delay="2500" autoplay-disable-on-interaction="false" data-aos="fade-up" data-aos-duration="1500">
+    
+        <swiper-slide style="background-image: url(imgs/events-1.jpg);">
+          <h3 class="fw-bold">Private Parties</h3>
+          <span class="fs-2 fw-bold d-block">$300</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+
+        <swiper-slide style="background-image: url(imgs/events-2.jpg);">
+          <h3 class="fw-bold">Birthday Parties</h3>
+          <span class="fs-2 fw-bold d-block">$400</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+
+        <swiper-slide style="background-image: url(imgs/events-3.jpg);">
+          <h3 class="fw-bold">Custom Parties</h3>
+          <span class="fs-2 fw-bold d-block">$99</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+
+        <swiper-slide style="background-image: url(imgs/about-2.jpg);">
+          <h3 class="fw-bold">Parties</h3>
+          <span class="fs-2 fw-bold d-block">$700</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+        
+        <swiper-slide style="background-image: url(imgs/about.jpg);">
+          <h3 class="fw-bold">Small Parties</h3>
+          <span class="fs-2 fw-bold d-block">$1000</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+    
+      </swiper-container>
+    
+      <!-- this swiper display in mobile-screen -->
+      <swiper-container dir="rtl" class="mySwiper swiper-mobilescreen" navigation="true" pagination="true" pagination-clickable="true">
+        
+        <swiper-slide style="background-image: url(imgs/events-1.jpg);">
+          <h3 class="fw-bold">Private Parties</h3>
+          <span class="fs-2 fw-bold d-block mx-auto">$300</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+
+        <swiper-slide style="background-image: url(imgs/events-2.jpg);">
+          <h3 class="fw-bold">Birthday Parties</h3>
+          <span class="fs-2 fw-bold d-block mx-auto">$400</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+
+        <swiper-slide style="background-image: url(imgs/events-3.jpg);">
+          <h3 class="fw-bold">Custom Parties</h3>
+          <span class="fs-2 fw-bold d-block mx-auto">$99</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+
+        <swiper-slide style="background-image: url(imgs/about-2.jpg);">
+          <h3 class="fw-bold">Parties</h3>
+          <span class="fs-2 fw-bold d-block mx-auto">$700</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+        
+        <swiper-slide style="background-image: url(imgs/about.jpg);">
+          <h3 class="fw-bold">Small Parties</h3>
+          <span class="fs-2 fw-bold d-block mx-auto">$1000</span>
+          <p class="lead my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quas officiis dignissimos illum quaerat nam est similique. Voluptas dicta in esse,</p>
+        </swiper-slide>
+    
+      </swiper-container>
+
+    </section>
+    <!-- end events -->
+
+    <!-- Start chefs -->
+    <section class="chefs py-5" id="chefs">
+      <div class="container">
+
+        <div class="main-heading" data-aos="fade-down" data-aos-duration="1500">
+          <p>CHEFS</p>
+          <h2>Our <span> Proffesional </span> Chefs</h2>
+        </div>
+
+        <div class="all-boxes d-flex flex-column flex-lg-row justify-content-center align-items-start gap-5 mt-5">
+          
+          <div class="box  text-center overflow-hidden rounded-3 position-relative" data-aos="fade-down" data-aos-duration="1500">
+            <img src="imgs/chefs-1.jpg" alt="" class="img-fluid">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L16,154.7C32,149,64,139,96,117.3C128,96,160,64,192,69.3C224,75,256,117,288,122.7C320,128,352,96,384,112C416,128,448,192,480,181.3C512,171,544,85,576,85.3C608,85,640,171,672,181.3C704,192,736,128,768,96C800,64,832,64,864,106.7C896,149,928,235,960,250.7C992,267,1024,213,1056,165.3C1088,117,1120,75,1152,90.7C1184,107,1216,181,1248,192C1280,203,1312,149,1344,138.7C1376,128,1408,160,1424,176L1440,192L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+          
+            <div class="text-chefs py-2">
+              <h2>Mostafa Moez</h2>
+              <span class="text-black-50">Master Chef</span>
+              <p class="lead px-2 mt-4">Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+            </div>
+
+            <div class="icons-chefs d-flex flex-column position-absolute p-2 rounded-3 gap-3">
+              <i class="fa-brands fa-twitter fs-4"></i>
+              <i class="fa-brands fa-facebook fs-4"></i>
+              <i class="fa-brands fa-instagram fs-4"></i>
+            </div>
+
+          </div>
+          
+          <div class="box  text-center overflow-hidden rounded-3 position-relative" data-aos="fade-up" data-aos-duration="1500">
+            <img src="imgs/chefs-2.jpg" alt="" class="img-fluid">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L16,154.7C32,149,64,139,96,117.3C128,96,160,64,192,69.3C224,75,256,117,288,122.7C320,128,352,96,384,112C416,128,448,192,480,181.3C512,171,544,85,576,85.3C608,85,640,171,672,181.3C704,192,736,128,768,96C800,64,832,64,864,106.7C896,149,928,235,960,250.7C992,267,1024,213,1056,165.3C1088,117,1120,75,1152,90.7C1184,107,1216,181,1248,192C1280,203,1312,149,1344,138.7C1376,128,1408,160,1424,176L1440,192L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+          
+            <div class="text-chefs py-2">
+              <h2>Sarah Jhonson</h2>
+              <span class="text-black-50">Patissier</span>
+              <p class="lead px-2 mt-4">Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+            </div>
+
+            <div class="icons-chefs d-flex flex-column position-absolute p-2 rounded-3 gap-3">
+              <i class="fa-brands fa-twitter fs-4"></i>
+              <i class="fa-brands fa-facebook fs-4"></i>
+              <i class="fa-brands fa-instagram fs-4"></i>
+            </div>
+
+          </div>
+
+          <div class="box  text-center overflow-hidden rounded-3 position-relative" data-aos="fade-down" data-aos-duration="1500">
+            <img src="imgs/chefs-3.jpg" alt="" class="img-fluid">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L16,154.7C32,149,64,139,96,117.3C128,96,160,64,192,69.3C224,75,256,117,288,122.7C320,128,352,96,384,112C416,128,448,192,480,181.3C512,171,544,85,576,85.3C608,85,640,171,672,181.3C704,192,736,128,768,96C800,64,832,64,864,106.7C896,149,928,235,960,250.7C992,267,1024,213,1056,165.3C1088,117,1120,75,1152,90.7C1184,107,1216,181,1248,192C1280,203,1312,149,1344,138.7C1376,128,1408,160,1424,176L1440,192L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path></svg>
+          
+            <div class="text-chefs py-2">
+              <h2>William Anderson</h2>
+              <span class="text-black-50">Cook</span>
+              <p class="lead px-2 mt-4">Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+            </div>
+
+            <div class="icons-chefs d-flex flex-column position-absolute p-2 rounded-3 gap-3">
+              <i class="fa-brands fa-twitter fs-4"></i>
+              <i class="fa-brands fa-facebook fs-4"></i>
+              <i class="fa-brands fa-instagram fs-4"></i>
+            </div>
+
+          </div>
+        
+        </div>
+      </div>
+    </section>
+    <!-- End chefs -->
+
+    <!-- start gallery -->
+    <section class="gallery text-center position-relative p-5" id="gallery">
+      <div class="container">
+
+        <div class="main-heading">
+          <p>GALLERY</p>
+          <h2>Check <span> Our Gallery </span> </h2>
+        </div>
+
+        <div class="slider-container">
+          <div id="slide-number" class="slide-number"></div>
+          <img src="imgs/gallery-1.jpg" alt="" />
+          <img src="imgs/gallery-2.jpg" alt="" />
+          <img src="imgs/gallery-3.jpg" alt="" />
+          <img src="imgs/gallery-4.jpg" alt="" />
+          <img src="imgs/gallery-5.jpg" alt="" />
+          <img src="imgs/gallery-6.jpg" alt="" />
+        </div>
+
+        <div class="slider-controls">
+            
+          <span id="prev" class="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </span>
+
+          <span id="indicators" class="indicators"></span>
+          
+          <span id="next" class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- End gallery -->
+
+    <!-- start contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        
+        <div class="main-heading" data-aos="fade-up" data-aos-duration="1500">
+          <p>CONTACT</p>
+          <h2>Need Help? <span> Contact Us </span> </h2>
+        </div>
+
+        <div class="map" data-aos="fade-up" data-aos-duration="1500">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.4747690937324!2d31.698003124740215!3d26.56913617477155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144f5ec9c4fd1e7f%3A0x13f0a73a193d206!2z2YXYt9i52YUg2YjYtdin2YrYqSDYqtmI2YHZitmC!5e0!3m2!1sar!2seg!4v1682435442934!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="address mt-4" data-aos="fade-down" data-aos-duration="1500">
+        
+          <div class="boxes">
+
+            <div class="box d-flex align-items-center gap-3 p-3">
+              <div class="icon">
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/oaflahpk.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#ce1212"
+                    style="width:80px;height:80px">
+                </lord-icon>
+              </div>
+              <div class="text">
+                <h3 class="text-black-50">Our Address</h3>
+                <p class="lead">A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+            <div class="box d-flex align-items-center gap-3 p-3">
+              <div class="icon">
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/iepbfivp.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#ee6d66,secondary:#c71f16,tertiary:#848484"
+                    style="width:80px;height:80px">
+                </lord-icon>
+              </div>
+              <div class="text">
+                <h3 class="text-black-50">Email Us</h3>
+                <p class="lead">contact@example.com</p>
+              </div>
+            </div>
+            <div class="box d-flex align-items-center gap-3 p-3">
+              <div class="icon">
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/avkeowsl.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#f9c9c0,secondary:#c71f16"
+                    style="width:80px;height:80px">
+                </lord-icon>
+              </div>
+              <div class="text">
+                <h3 class="text-black-50">Call Us</h3>
+                <p class="lead">+01147998560</p>
+              </div>
+            </div>
+            <div class="box d-flex align-items-center gap-3 p-3">
+              <div class="icon">
+                <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/mgmiqlge.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#3a3347,secondary:#f24c00,tertiary:#c71f16,quaternary:#ebe6ef"
+                    style="width:80px;height:80px">
+                </lord-icon>
+              </div>
+              <div class="text">
+                <h3 class="text-black-50">Opening Hours</h3>
+                <p class="lead">Mon-Sat: 11AM - 23PM; Sunday: Closed</p>
+              </div>
+            </div>
+          
+          </div>
+        
+        </div>
+
+        <form action="" class="my-4 p-3" data-aos="fade-up" data-aos-duration="1500">
+          <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
+            <input type="text" placeholder="Your Name" class="col p-2 fs-5 rounded-3 border border-secondary-subtle">
+            <input type="text" placeholder="Your Email" class="col p-2 fs-5 rounded-3 border border-secondary-subtle">
+          </div>
+          
+          <div class="subject my-3">
+            <input type="text" placeholder="Subject" class="col-12 p-2 fs-5 rounded-3 border border-secondary-subtle">
+          </div>
+
+          <div class="text-area my-3">
+            <textarea placeholder="Message" class="col-12 p-2 fs-5 rounded-3 border border-secondary-subtle" rows="5"></textarea>
+          </div>
+
+          <button class="main-btn btn d-block m-auto fs-5 py-2 px-4 fw-semibold">Send Message</button>
+        
+        </form>
+
+      </div>
+    </section>
+    <!-- End contact -->
+
+    <!-- start footer -->
+    <footer class="py-5 mt-5 bg-dark">
+      <div class="container">
+        <div class="boxes-footer">
+
+          <div class="box d-flex flex-column align-items-center gap-4">
+            <i class="fa-solid fa-location-dot fs-1 text-white-50"></i>
+            <h4 class="text-white">Address</h4>
+            <p class="lead text-white text-center">
+              A108 Adam Street<br>
+              New York, NY 535022 - US
+            </p>
+          </div>
+
+          <div class="box d-flex flex-column align-items-center gap-4">
+            <i class="fa-solid fa-phone fs-1 text-white-50"></i>
+            <h4 class="text-white">Reservations</h4>
+            <p class="lead text-white text-center">
+              Phone: +011 4799 8560 <br>
+              Email: info@example.com
+            </p>
+          </div>
+
+          <div class="box d-flex flex-column align-items-center gap-4">
+            <i class="fa-solid fa-clock fs-1 text-white-50"></i>
+            <h4 class="text-white"> Opening Hours </h4>
+            <p class="lead text-white text-center">
+              Mon-Sat: 11AM - 23PM <br>
+              Sunday: Closed
+            </p>
+          </div>
+
+          <div class="box d-flex flex-column align-items-center gap-4 text-center">
+            <i class="fa-solid fa-share-nodes fs-1 text-white-50"></i>
+            <h4 class="text-white">Follow Us</h4>
+            <div class="brand d-flex justify-content-center align-items-center gap-3">
+              <i class="fa-brands fa-twitter fs-5 text-white-50 p-3 border border-secondary-subtle rounded-circle"></i>
+              <i class="fa-brands fa-facebook fs-5 text-white-50 p-3 border border-secondary-subtle rounded-circle"></i>
+              <i class="fa-brands fa-instagram fs-5 text-white-50 p-3 border border-secondary-subtle rounded-circle"></i>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="text-white text-center my-3 fs-5 mb-0">Created by</p>
+
+        <div class="created text-white d-flex justify-content-center align-items-center gap-2">
+          
+          <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+          <lord-icon
+              src="https://cdn.lordicon.com/iwaotjbp.json"
+              trigger="loop"
+              delay="500"
+              colors="primary:#c71f16,secondary:#ebe6ef"
+              style="width:40px;height:40px">
+          </lord-icon>
+
+          <p class="text-white text-center my-3 fs-4 fw-semibold">Ahmed Ramadan</p>
+
+          <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+          <lord-icon
+              src="https://cdn.lordicon.com/iwaotjbp.json"
+              trigger="loop"
+              delay="500"
+              colors="primary:#c71f16,secondary:#ebe6ef"
+              style="width:40px;height:40px">
+          </lord-icon>
+
+        </div>
+
+      </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="js/rest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <!-- Aos animate .js -->
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+  
+</html>

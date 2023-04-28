@@ -1,0 +1,60 @@
+.chefs{
+    background: var(--section-bg);
+    .container{
+        .all-boxes{
+            display: grid !important;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* مهم مهم مهم  */
+            gap: 20px;
+            .box{
+                background: white;
+                @include largeScreen{
+                    height: 700px !important;
+                }
+                @include MediumScreen{
+                    height: 750px !important;
+                }
+                @include smallScreen{
+                    height: 625px !important;
+                }
+                img{
+                    width: 100%;
+                }
+                svg{
+                    position: relative !important;
+                    bottom: 75px !important;
+                    @include smallScreen{
+                        bottom: 70px !important;
+                    }
+                    @include MediumScreen{
+                        bottom: 65px !important;
+                    }
+                }
+                .text-chefs{
+                    margin-top: -50px;
+                    h2{
+                        font-family: var(--font-second);
+                    }
+                }
+                .icons-chefs{
+                    top: 20px;
+                    right: -45px;
+                    background-color: #d7d7d757;
+                    i{
+                        cursor: pointer;
+                        color: rgba(70, 70, 70, 0.623);
+                        &:hover{
+                            color: black;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    .icons-chefs{
+                        right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

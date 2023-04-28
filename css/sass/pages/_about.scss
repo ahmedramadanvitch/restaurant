@@ -1,0 +1,52 @@
+.about{
+    height: fit-content;
+    .container{
+        .row{
+            .img-about{
+                img{
+                    height: 100% !important;
+                }
+                .box-img-about{
+                    text-align: center;
+                    background: white;
+                    width: 60%;
+                    height: fit-content;
+                    border-radius: 10px;
+                    bottom: 50px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    letter-spacing: 2px;
+                    p:nth-child(2){
+                        color: var(--red-color);
+                    }
+                    @include mobileScreen{
+                        width: 75%;
+                        bottom: 10px;
+                    }
+                }
+            }
+            .text-about{
+                ul{
+                    li{
+                        &:nth-child(2), &:nth-child(3), &:nth-child(4){
+                            padding: 5px 0px;
+                            background-color: var(--red-color);
+                            color: white !important;
+                            margin-bottom: 6px;
+                            border-radius: 10px;
+                            @include mobileScreen{
+                                padding: 5px 5px;
+                            }
+                        }
+                        lord-icon{
+                            min-width: 50px !important;
+                            @include mobileScreen{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

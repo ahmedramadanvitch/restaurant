@@ -1,0 +1,62 @@
+.landing{
+    width: 100%;
+    background-color: var(--section-bg);
+    overflow-x: hidden;
+    @include mobileScreen{
+        height: 95vh;
+        padding-top: 40px !important;
+    }
+    @include smallScreen{
+        height: fit-content;
+        padding-top: 20px !important;
+    }
+    @include MediumScreen{
+        height: 80vh;
+        padding-top: 100px !important;
+    }
+    @include largeScreen{
+        height: 100vh;
+        padding-top: 40px !important;
+    }
+    .container{
+        .row{
+            .text-landing{
+                h1{
+                    font-family: var(--font-second) !important;
+                    font-size: 55px;
+                    @include mobileScreen{
+                        font-size: 40px;
+                    }
+                }
+                button{
+                    display: block;
+                    width: fit-content;
+                }
+                @include mobileScreen{
+                    order: 1;
+                }
+                @include smallScreen{
+                    order: 1;
+                }
+            }
+            .img-landing{
+                overflow: hidden !important;
+                img{
+                    animation-name: rotate-img;
+                    animation-duration: 20s;
+                    animation-timing-function: linear;
+                    animation-fill-mode: both;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+}
+@keyframes rotate-img {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
